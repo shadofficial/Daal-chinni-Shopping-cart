@@ -6,8 +6,9 @@ import {useNavigate} from 'react-router-dom';
 
 function Order(props) {
 
-  const navigate = useNavigate();
-
+const goback=() =>{
+  props.history.push('/');
+}
   const {
     state: { cart },
     dispatch,
@@ -23,10 +24,9 @@ function Order(props) {
       <Container fluid="md">
         <Row>
           <Col>
-          <FaArrowLeft onClick={() => navigate(-1)} color="white" fontSize="25px"/><span><p>Order Confirm page</p></span>
+          <FaArrowLeft onClick={() => goback()} color="white" fontSize="25px"/><span><p>Order Confirm page</p></span>
           <div className="text-center">
           <h4>Thank you for your Order</h4>
-          <p>Here are your Order details</p>
           </div>
           <ListGroup>
           {cart.map((prod) => (
