@@ -87,6 +87,7 @@ const SingleProduct = ({ prod }) => {
             </div>
           )}
         </Col>
+        <hr/>
       </Row>
     </Container>
   );
