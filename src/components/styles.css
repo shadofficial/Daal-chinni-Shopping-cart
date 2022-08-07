@@ -1,4 +1,7 @@
 /* header styles */
+body{
+  font-family: 'Mouse Memoirs', sans-serif;
+}
 .add-minus-quantity {
   display: flex;
   justify-content: flex-end;
