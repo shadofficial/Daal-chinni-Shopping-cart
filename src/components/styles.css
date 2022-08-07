@@ -1,0 +1,137 @@
+/* header styles */
+.add-minus-quantity {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border: 3px solid #28a745;
+}
+.pro_h1{
+  font-size:22px;
+}
+.add-minus-quantity button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.add-minus-quantity input {
+  width: 6rem;
+  height: 3rem;
+  border: 0.141rem solid var(--primary-color);
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--primary-color);
+  margin: 0 1rem;
+  border-radius: 0.5rem;
+  outline: none;
+  background-color: transparent;
+}
+
+.add-minus-quantity input:focus {
+  outline: none;
+}
+
+.header {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.cartitem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+  margin-bottom: 20px;
+}
+
+.cartItemImg {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.cartItemDetail {
+  display: flex;
+  flex: 1;
+  padding: 0 20px;
+  flex-direction: column;
+}
+
+/* Home Page */
+
+.home {
+  display: flex;
+}
+
+.filters {
+  background-color: #343a40;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin: 10px;
+  height: 86vh;
+}
+
+.filters > span {
+  padding-bottom: 20px;
+}
+
+.title {
+  font-size: 30px;
+}
+
+.productContainer {
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.products {
+  width: 30%;
+  margin: 10px;
+}
+
+.summary {
+  width: 30%;
+}
+
+/* Media Queries */
+@media (max-width: 771px) {
+  .pro_h1{
+    font-size:25px;
+  }
+  .filters {
+    width: 40%;
+    padding: 10px;
+    margin: 5px;
+  }
+
+  .filters > span {
+    font-size: 10px;
+  }
+
+  .title {
+    font-size: 18px !important;
+  }
+
+ 
+
+  .search {
+    display: none !important;
+  }
+
+  .products {
+    width: 100%;
+  }
+}
