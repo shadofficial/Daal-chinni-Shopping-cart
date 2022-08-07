@@ -12,7 +12,7 @@ const Context = ({ children }) => {
     name: faker.commerce.productName(),
     price: faker.commerce.price(),
     description: faker.commerce.productDescription(),
-    image: faker.random.image(),
+    image: "https://thumbs.dreamstime.com/b/aloo-paratha-indian-potato-stuffed-flatbread-butter-top-served-fresh-sweet-lassi-chutney-pickle-selective-focus-lassie-164213775.jpg",
     inStock: faker.random.arrayElement([0, 3, 5, 6, 7]),
     fastDelivery: faker.datatype.boolean(),
     ratings: faker.random.arrayElement([1, 2, 3, 4, 5]),
