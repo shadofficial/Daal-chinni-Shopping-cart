@@ -15,6 +15,23 @@
   cursor: pointer;
 }
 
+.add-minus-quantity input {
+  width: 6rem;
+  height: 3rem;
+  border: 0.141rem solid var(--primary-color);
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--primary-color);
+  margin: 0 1rem;
+  border-radius: 0.5rem;
+  outline: none;
+  background-color: transparent;
+}
+
 .add-minus-quantity input:focus {
   outline: none;
 }
@@ -75,7 +92,7 @@
 
 .productContainer {
   display: flex;
-  padding: 20px;
+  padding: 5px;
   flex-wrap: wrap;
   justify-content: space-around;
 }

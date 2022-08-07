@@ -24,9 +24,10 @@ const goback=() =>{
       <Container fluid="md">
         <Row>
           <Col>
-          <FaArrowLeft onClick={() => goback()} color="white" fontSize="25px"/><span><p>Order Confirm page</p></span>
+          <FaArrowLeft onClick={() => goback()}  fontSize="25px"/><span><p>Order Confirm page</p></span>
           <div className="text-center">
           <h4>Thank you for your Order</h4>
+          <p>Here are your Order details</p>
           </div>
           <ListGroup>
           {cart.map((prod) => (
@@ -43,23 +44,7 @@ const goback=() =>{
                  {prod.description}
                 </Col>
                 <Col md={2}>
-                  <Form.Control
-                    as="select"
-                    value={prod.qty}
-                    onChange={(e) =>
-                      dispatch({
-                        type: "CHANGE_CART_QTY",
-                        payload: {
-                          id: prod.id,
-                          qty: e.target.value,
-                        },
-                      })
-                    }
-                  >
-                    {[...Array(prod.inStock).keys()].map((x) => (
-                      <option key={x + 1}>{x + 1}</option>
-                    ))}
-                  </Form.Control>
+                  
                 </Col>
                 <Col md={2}>
                   
