@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
  
 function Login(props) {
   const username = useFormInput('');
@@ -13,17 +15,27 @@ function Login(props) {
  
   return (
     <div>
-      Login<br /><br />
-      <div>
-        Username<br />
-        <input type="text" {...username} autoComplete="new-password" />
-      </div>
-      <div style={{ marginTop: 10 }}>
-      Mobile Number<br />
-        <input type="password" {...password} autoComplete="new-password" />
-      </div>
-      {error && <><small style={{ color: 'red' }}>{error}</small><br /></>}<br />
-      <input type="button" value={loading ? 'Loading...' : 'Login'} onClick={handleLogin} disabled={loading} /><br />
+<Form>
+      <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Label>Login</Form.Label>
+        <Form.Control type="text" {...username}  placeholder="Enter your name" />
+        <Form.Text className="text-muted">
+          We'll never share your details with anyone else.
+        </Form.Text>
+      </Form.Group>
+
+      <Form.Group className="mb-3" controlId="formBasicPassword">
+        <Form.Label>Number</Form.Label>
+        <Form.Control type="number" {...password} placeholder="Password" />
+      </Form.Group>
+      <Form.Group className="mb-3" controlId="formBasicCheckbox">
+        <Form.Check type="checkbox" label="Check me out" />
+      </Form.Group>
+      <Button variant="primary" type="submit"  onClick={handleLogin} disabled={loading}>
+        Submit
+      </Button>
+    </Form>
+
     </div>
   );
 }
