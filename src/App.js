@@ -21,7 +21,7 @@ function App() {
           <Cart />
         </Route>
         <Route path="/login" component={Login} />
-        <Route path="/dashboard" component={Order} />
+        <Route path="/Order" component={Order} />
       </div>
     </BrowserRouter>
   );
