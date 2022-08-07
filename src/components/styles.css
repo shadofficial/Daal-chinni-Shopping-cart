@@ -2,6 +2,9 @@
 body{
   font-family: 'Mouse Memoirs', sans-serif;
 }
+.btn_lgn{
+  width: 100% !important;
+}
 hr {
   margin-top: 1rem;
   margin-bottom: 1rem;

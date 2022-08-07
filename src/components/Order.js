@@ -24,7 +24,7 @@ const goback=() =>{
       <Container fluid="md">
         <Row>
           <Col>
-          <FaArrowLeft onClick={() => goback()}  fontSize="25px"/><span><p>Order Confirm page</p></span>
+          <FaArrowLeft onClick={() => goback()}  fontSize="25px"/><span>Order Confirm page</span>
           <div className="text-center">
           <h4>Thank you for your Order</h4>
           <p>Here are your Order details</p>

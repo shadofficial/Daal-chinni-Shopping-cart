@@ -16,10 +16,10 @@ function Login(props) {
   };
 
   return (
-    <Container fluid="md">
+    <Container fluid="md" className="my-3">
       <Row>
         <Col>
-          <Form>
+          <Form className="shadow mb-5 bg-body rounded">
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Login</Form.Label>
               <Form.Control
@@ -40,11 +40,8 @@ function Login(props) {
                 placeholder="Password"
               />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicCheckbox">
-              <Form.Check type="checkbox" label="Check me out" />
-            </Form.Group>
-            <Button 
-              variant="Success"
+            <Button className="btn_lgn"
+              variant="success"
               type="submit"
               onClick={handleLogin}
             >
