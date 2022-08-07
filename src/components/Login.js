@@ -19,7 +19,7 @@ function Login(props) {
     <Container fluid="md" className="my-3">
       <Row>
         <Col>
-          <Form className="shadow mb-5 bg-body rounded">
+          <Form>
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Login</Form.Label>
               <Form.Control
