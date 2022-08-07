@@ -33,7 +33,7 @@ function Login(props) {
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicPassword">
-              <Form.Label>Number</Form.Label>
+              <Form.Label>Mobile Number</Form.Label>
               <Form.Control
                 type="number"
                 {...password}
@@ -51,6 +51,7 @@ function Login(props) {
             >
               Submit
             </Button>
+            <p className="text-center" onClick={handleLogin}><span>Will do later </span></p>
           </Form>
         </Col>
       </Row>
