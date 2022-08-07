@@ -47,7 +47,6 @@ function Login(props) {
               variant="Success"
               type="submit"
               onClick={handleLogin}
-              disabled={loading}
             >
               Submit
             </Button>
