@@ -43,7 +43,7 @@ function Login(props) {
             <Form.Group className="mb-3" controlId="formBasicCheckbox">
               <Form.Check type="checkbox" label="Check me out" />
             </Form.Group>
-            <Button clasName="btn-block"
+            <Button 
               variant="Success"
               type="submit"
               onClick={handleLogin}
