@@ -1,9 +1,13 @@
 import React from 'react';
 import {Container, Col , Form, Image, ListGroup, Row } from "react-bootstrap";
 import { CartState } from "../context/Context";
+import { FaArrowLeft } from "react-icons/fa";
+import {useNavigate} from 'react-router-dom';
 
- 
 function Order(props) {
+
+  const navigate = useNavigate();
+
   const {
     state: { cart },
     dispatch,
@@ -19,8 +23,11 @@ function Order(props) {
       <Container fluid="md">
         <Row>
           <Col>
+          <FaArrowLeft onClick={() => navigate(-1)} color="white" fontSize="25px"/><span><p>Order Confirm page</p></span>
+          <div className="text-center">
           <h4>Thank you for your Order</h4>
           <p>Here are your Order details</p>
+          </div>
           <ListGroup>
           {cart.map((prod) => (
             <ListGroup.Item key={prod.id}>
