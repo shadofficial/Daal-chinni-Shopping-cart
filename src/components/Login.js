@@ -8,8 +8,7 @@ import Col from "react-bootstrap/Col";
 function Login(props) {
   const username = useFormInput("");
   const password = useFormInput("");
-  const [error, setError] = useState(null);
-  const [loading, setLoading] = useState(false);
+ 
 
   // handle button click of login form
   const handleLogin = () => {
@@ -44,8 +43,8 @@ function Login(props) {
             <Form.Group className="mb-3" controlId="formBasicCheckbox">
               <Form.Check type="checkbox" label="Check me out" />
             </Form.Group>
-            <Button
-              variant="primary"
+            <Button clasName="btn-block"
+              variant="Success"
               type="submit"
               onClick={handleLogin}
               disabled={loading}
