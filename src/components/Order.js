@@ -57,8 +57,6 @@ const goback=() =>{
           </Col>
         </Row>
       </Container>
-     
-      <input type="button" onClick={handleLogout} value="Logout" />
     </div>
   );
 }

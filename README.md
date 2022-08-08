@@ -3,5 +3,7 @@
 ### I have used faker data for the product
 
 ### Live Demo - https://daalshoppingcart.herokuapp.com/
+![Site image](/public/siteimage.png)
+
 
 
